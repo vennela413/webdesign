@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-content">
+        <form id="form" method="POST">
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Name:</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input class="input" type="text" placeholder="Name" id="username" name="name">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="show_error"></div>
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Email:</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input class="input" type="email" placeholder="email" id="email" name="email">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="show-error"></div>
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Password:</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input class="input" type="number" placeholder="mobile number" id="number" name="number">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="showerror"></div>
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Message:</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <textarea class="textarea" placeholder="Explain how we can help you" id="textarea" name="textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div id="errorshow"></div>     
+        <div class="field is-horizontal">
+          <div class="field-label">
+            <label class="label">Gender:</label>
+          </div>
+          <div class="field-body">
+            <div class="field is-narrow">
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" name="member" value="male" id="select" name="radioButton">
+                  male
+                </label>
+                <label class="radio">
+                  <input type="radio" name="member" value="female" id="select" name="radioButton">
+                  female
+                </label>
+                <label class="radio">
+                  <input type="radio" name="member" value="others" id="select" name="radioButton">
+                  others
+                </label>
+              </div>
+            </div>
+          </div>                   
+        </div>
+        <div id="error-show"></div>
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox" name="checkbox">
+              I agree to the <a href="#">terms and conditions</a>
+            </label>
+          </div>
+        </div>               
+      </div>
+    </div>
+  <br><br>
+        <div class="field">
+          <p class="control">
+            <button class="button is-success" id="submit" onclick="myfunction()">
+              Login
+            </button>
+          </p>
+        </div> 
+      </form>
+      <div class="card">
+        <div class="card-content">
+      <p id="name"></p>
+      <p id="Email"></p>
+      <p id="Number"></p>
+      <p id="Text"></p>
+      <p id="gender"></p>
+      </div>
+      </div>
+      <script src="form.js" ></script>
+  </body>
+</html>
