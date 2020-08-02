@@ -25,10 +25,10 @@ $(document).ready(function(){
  function myfunction(){
     var Name= $("#username").val();
     $("#name").html(Name);
-     $("#username").val("");
+    $("#username").val("");
     var email= $("#email").val();
     $("#Email").html(email);
-     $("#email").val("");
+    $("#email").val("");
     var num= $("#number").val();
     $("#Number").html(num);
     $("#number").val("");
@@ -36,8 +36,8 @@ $(document).ready(function(){
     $("#Text").html(text);
     $("#textarea").val("");
     var radioValue = $("input[name='member']:checked").val();
-   if(radioValue){
-    $("#gender").html( radioValue);
-     }
-   $(".radioButton").prop('checked',false);
-    }
+      if(radioValue){
+         $("#gender").html( radioValue);
+        }
+         $(".radioButton").prop('checked',false);
+        }
