@@ -4,12 +4,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.css">
     <link rel="stylesheet" href="form.css">
     <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
   </head>
   <body>
     <div class="card">
       <div class="card-content">
-        <form id="form" name="FormR">
         <div class="field is-horizontal">
           <div class="field-label is-normal">
             <label class="label">Name:</label>
@@ -22,6 +20,7 @@
             </div>
           </div>
         </div>
+        <p id="usercheck"></p>
         <div class="field is-horizontal">
           <div class="field-label is-normal">
             <label class="label">Email:</label>
@@ -34,9 +33,10 @@
             </div>
           </div>
         </div>
+        <p id="emailcheck"></p>
         <div class="field is-horizontal">
           <div class="field-label is-normal">
-            <label class="label">Password:</label>
+            <label class="label">Mobile no:</label>
           </div>
           <div class="field-body">
             <div class="field">
@@ -46,6 +46,7 @@
             </div>
           </div>
         </div>
+        <p id="numcheck"></p>
         <div class="field is-horizontal">
           <div class="field-label is-normal">
             <label class="label">Message:</label>
@@ -58,7 +59,7 @@
             </div>
           </div>
         </div>  
-        <div id="errorshow"></div>     
+        <div id="textcheck"></div>     
         <div class="field is-horizontal">
           <div class="field-label">
             <label class="label">Gender:</label>
@@ -67,11 +68,11 @@
             <div class="field is-narrow">
               <div class="control">
                 <label class="radio">
-                  <input type="radio" name="Gender" value="male" id="select">
+                  <input type="radio" name="Gender" value="male" id="select" >
                   male
                 </label>
                 <label class="radio">
-                  <input type="radio" name="Gender" value="female" id="select">
+                  <input type="radio" name="Gender" value="female" id="select" >
                   female
                 </label>
                 <label class="radio">
@@ -93,9 +94,7 @@
         </div>
        </div>
      <br><br>
-     <button class="button is-success" id="submit">Login</button>
-     <button class="button is-warning" id="button" onclick="myfunction()" type="reset">reset</button>
-      </form>
+     <button class="button is-warning" id="submit" name="btn">Submit</button>
         <div class="card">
           <div class="card-content">
              <p id="name"></p>
@@ -105,7 +104,7 @@
              <p id="gender"></p>
              <p id="check"></p>
           </div>
-      </div>
-      <script src="form.js" ></script>
+        </div>
+        <script src="form.js"></script>
   </body>
 </html>
