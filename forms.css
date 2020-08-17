@@ -1,0 +1,10 @@
+#submit {
+  margin-left: 450px;
+}
+.card {
+  width: 30%;
+  height: 50%;
+  margin-left: 300px;
+  border: 1px solid green;
+  margin-top: 50px;
+}
