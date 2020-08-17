@@ -6,7 +6,7 @@ $(document).ready(function () {
   var email_error = true;
   var num_error = true;
   var text_error = true;
-  $("#submit").click(function () {
+  $("#username").keyup(function () {
     user_check();
   });
   function user_check() {
@@ -98,3 +98,4 @@ function Details() {
 $("#submit").click(function () {
   Details();
 });
+
