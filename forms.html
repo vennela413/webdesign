@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.css">
-    <link rel="stylesheet" href="form.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.css"
+    />
+    <link rel="stylesheet" href="form.css" />
     <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
   </head>
   <body>
     <div class="card">
       <div class="card-content">
-        <form id="form" method="POST">
         <div class="field is-horizontal">
           <div class="field-label is-normal">
             <label class="label">Name:</label>
@@ -17,12 +18,18 @@
           <div class="field-body">
             <div class="field">
               <div class="control">
-                <input class="input" type="text" placeholder="Name" id="username" name="name">
+                <input
+                  class="input"
+                  name="Name"
+                  type="text"
+                  placeholder="Name"
+                  id="username"
+                />
               </div>
             </div>
           </div>
         </div>
-        <div id="show_error"></div>
+        <p id="usercheck"></p>
         <div class="field is-horizontal">
           <div class="field-label is-normal">
             <label class="label">Email:</label>
@@ -30,25 +37,37 @@
           <div class="field-body">
             <div class="field">
               <div class="control">
-                <input class="input" type="email" placeholder="email" id="email" name="email">
+                <input
+                  class="input"
+                  type="email"
+                  placeholder="email"
+                  id="email"
+                  name="email"
+                />
               </div>
             </div>
           </div>
         </div>
-        <div id="show-error"></div>
+        <p id="emailcheck"></p>
         <div class="field is-horizontal">
           <div class="field-label is-normal">
-            <label class="label">Password:</label>
+            <label class="label">Mobile no:</label>
           </div>
           <div class="field-body">
             <div class="field">
               <div class="control">
-                <input class="input" type="number" placeholder="mobile number" id="number" name="number">
+                <input
+                  class="input"
+                  type="number"
+                  placeholder="mobile number"
+                  id="number"
+                  name="number"
+                />
               </div>
             </div>
           </div>
         </div>
-        <div id="showerror"></div>
+        <p id="numcheck"></p>
         <div class="field is-horizontal">
           <div class="field-label is-normal">
             <label class="label">Message:</label>
@@ -56,12 +75,17 @@
           <div class="field-body">
             <div class="field">
               <div class="control">
-                <textarea class="textarea" placeholder="Explain how we can help you" id="textarea" name="textarea"></textarea>
+                <textarea
+                  class="textarea"
+                  placeholder="Explain how we can help you"
+                  id="textarea"
+                  name="textarea"
+                ></textarea>
               </div>
             </div>
           </div>
-        </div>  
-        <div id="errorshow"></div>     
+        </div>
+        <div id="textcheck"></div>
         <div class="field is-horizontal">
           <div class="field-label">
             <label class="label">Gender:</label>
@@ -70,50 +94,57 @@
             <div class="field is-narrow">
               <div class="control">
                 <label class="radio">
-                  <input type="radio" name="member" value="male" id="select" name="radioButton">
+                  <input type="radio" name="Gender" value="male" id="select" />
                   male
                 </label>
                 <label class="radio">
-                  <input type="radio" name="member" value="female" id="select" name="radioButton">
+                  <input
+                    type="radio"
+                    name="Gender"
+                    value="female"
+                    id="select"
+                  />
                   female
                 </label>
                 <label class="radio">
-                  <input type="radio" name="member" value="others" id="select" name="radioButton">
+                  <input
+                    type="radio"
+                    name="Gender"
+                    value="others"
+                    id="select"
+                  />
                   others
                 </label>
               </div>
             </div>
-          </div>                   
+          </div>
         </div>
-        <div id="error-show"></div>
         <div class="field">
           <div class="control">
             <label class="checkbox">
-              <input type="checkbox" name="checkbox">
+              <input
+                type="checkbox"
+                name="checkbox"
+                value="I agree Terms and Conditions"
+              />
               I agree to the <a href="#">terms and conditions</a>
             </label>
           </div>
-        </div>               
-      </div>
-    </div>
-  <br><br>
-        <div class="field">
-          <p class="control">
-            <button class="button is-success" id="submit" onclick="myfunction()">
-              Login
-            </button>
-          </p>
-        </div> 
-      </form>
-      <div class="card">
-        <div class="card-content">
-          <p id="name"></p>
-          <p id="Email"></p>
-          <p id="Number"></p>
-          <p id="Text"></p>
-          <p id="gender"></p>
         </div>
       </div>
-      <script src="form.js" ></script>
+    </div>
+    <br /><br />
+    <button class="button is-warning" id="submit" name="btn">Submit</button>
+    <div class="card">
+      <div class="card-content">
+        <p id="name"></p>
+        <p id="Email"></p>
+        <p id="Number"></p>
+        <p id="Text"></p>
+        <p id="gender"></p>
+        <p id="check"></p>
+      </div>
+    </div>
+    <script src="form.js"></script>
   </body>
 </html>
